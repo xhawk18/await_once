@@ -1,8 +1,8 @@
 {
   "name": "await_once",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "await an async function only once.",
-  "main": "once.js",
+  "main": "await_once.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
