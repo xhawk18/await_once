@@ -1,6 +1,6 @@
 {
   "name": "await_once",
-  "version": "1.0.0",
+  "version": "2.0.1",
   "description": "await an async function only once.",
   "main": "once.js",
   "scripts": {

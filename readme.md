@@ -10,8 +10,7 @@ await once(name, func);
 ```
 
 * name - a custom defined unique name.
-
-* func - a async or sync function.
+* func - an async or sync function.
 
 # Usage
 
@@ -30,12 +29,10 @@ async function myFunc1(){
     return ret;
 }
 
-
 async function main(){
    let ret = await once('my_name1', myFunc1);
    console.log('ret =', ret);
 }
-
 
 main();
 main();
@@ -58,7 +55,6 @@ async function myFunc2(){
     throw new Error(ret);
 }
 
-
 async function main() {
     try {
         let ret = await once('my_name2', myFunc2);
@@ -67,7 +63,6 @@ async function main() {
         console.log('err = ', err);
     }
 }
-
 
 main();
 main();
