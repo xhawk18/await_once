@@ -37,7 +37,7 @@ async function main(){
 main();
 main();
 main();
-
+setTimeout(main, 3000);
 ```
 
 ## Example 2 - call an async function once and catch the same error
@@ -67,5 +67,5 @@ async function main() {
 main();
 main();
 main();
-
+setTimeout(main, 3000);
 ```

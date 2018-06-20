@@ -20,4 +20,5 @@ async function main(){
 main();
 main();
 main();
+setTimeout(main, 3000);
 

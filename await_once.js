@@ -1,9 +1,9 @@
-let map = {};
+var map = {};
 
 function once(name, func) {
 
     return new Promise(function(resolve, reject) {
-        let instance = map[name];
+        var instance = map[name];
 
         if(instance !== undefined) {
             if(!instance.initialized)
@@ -21,16 +21,17 @@ function once(name, func) {
             Promise.resolve().then(function(){
                 return func();
             }).then(function(result){
-                //console.log(result);
-                instance.result = result;
+                var waiting = instance.waiting;
                 instance.initialized = true;
-                instance.waiting.map(function(wait){ wait.resolve(instance.result); });
+                instance.result = result;
                 instance.waiting = [];
+                waiting.map(function(wait){ wait.resolve(instance.result); });
             }, function(err){
+                var waiting = instance.waiting;
                 instance.initialized = true;
                 instance.error = {error: err};
-                instance.waiting.map(function(wait){ wait.reject(instance.error.error); });
                 instance.waiting = [];
+                waiting.map(function(wait){ wait.reject(instance.error.error); });
             });
         }
     });
