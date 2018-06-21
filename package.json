@@ -1,6 +1,6 @@
 {
   "name": "await_once",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Implement of singleton mode -- call an async function only once.",
   "main": "await_once.js",
   "scripts": {

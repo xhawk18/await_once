@@ -1,6 +1,6 @@
 # Description
 
-This module helps to (await) call async function only once.
+This module implements singleton mode and helps to (await) call async function only once.
 
 # Api
 
