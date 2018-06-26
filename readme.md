@@ -12,6 +12,10 @@ await once(name, func);
 * name - a custom defined unique name.
 * func - an async or sync function.
 
+# Demo
+
+[Try it online](https://runkit.com/embed/fypy7r84a9e5)
+
 # Usage
 
 ## Example 1 - call an async function once and await the same result
