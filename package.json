@@ -1,6 +1,6 @@
 {
   "name": "await_once",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "Implement of singleton mode -- call an async function only once.",
   "main": "await_once.js",
   "scripts": {
@@ -14,7 +14,7 @@
     "instance"
   ],
   "author": "xhawk18@gmail.com",
-  "license": "MIT",
+  "license": "996 License",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xhawk18/await_once.git"
